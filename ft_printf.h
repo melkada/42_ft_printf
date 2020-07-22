@@ -50,5 +50,4 @@ int				ft_pf_atoi(char **str);
 int				ft_allowed_to_print(unsigned value, int	precision, int val);
 void			ft_putnbr_base(unsigned long nbr, char *base);
 int				ft_get_base_size(unsigned long n, int base);
-void			ft_printparams(t_params	*params);
 #endif
