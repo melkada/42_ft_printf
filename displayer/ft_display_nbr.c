@@ -24,7 +24,7 @@ static int	ft_write(t_params *params, long value, int preci, int digits)
 		ret += write(1, "-", 1);
 	if (!params->left)
 		while (params->width-- > 0)
-			ret += write(1, (params->zero ? "0" : "1"), 1);
+			ret += write(1, (params->zero ? "0" : " "), 1);
 	while (digits < params->precision_val--)
 		ret += write(1, "0", 1);
 	if (ft_allowed_to_print(value, params->precision, preci))
